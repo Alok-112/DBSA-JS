@@ -5,20 +5,20 @@
 }
 
 body {
-    background-color: #c1ebfa;
+    background-color: #b828ac7d;
 }
 
 table {
     width: 70%;
     margin-left: 15%;
     height: 100vh;
-    background-color: #cdffda;
+    background-color: #f9f647;
 }
 
 /* ---------- HEADER ---------- */
 
 .header {
-    background-color: #f8ffcd;
+    background-color: #2fb831ad;
     font-size: 20px;
     height: 40px;
 }
@@ -27,7 +27,7 @@ table {
 /* ---------- NAVBAR ---------- */
 
 .navbar {
-    background-color: #ffd6cd;
+    background-color: #52cdd3;
     height: 40px;
 }
 
@@ -44,7 +44,7 @@ table {
 }
 
 .navbar a:hover {
-    color: #1aff12;
+    color: #2c17e7;
     font-size: 17px;
 }
 
@@ -52,7 +52,7 @@ table {
 /* ---------- FOOTER ---------- */
 
 .footer {
-    background-color: #cddeff;
-    color: #202020;
+    background-color: #373c34;
+    color: #ffffff;
     height: 40px;
 }
