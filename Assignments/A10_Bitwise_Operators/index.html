@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container" align="center" >
+    <label for="A">A</label>
+    <input type="text" id="a" placeholder="Enter the first value">
+    <br>
+    <label for="B">B</label>
+    <input type="text" id="b" placeholder="Enter the Second  value">
+    <br>
+    <button onclick="calBit('^')">XOR</button>
+    <button onclick="calBit('&')">AND</button>
+    <button onclick="calBit('|')">OR</button>
+    <button onclick="calBit('>>')">&gt;&gt;</button>
+    <button onclick="calBit('<<')">&lt;&lt;</button>
+    <button onclick="calBit('>>>')">&gt;&gt;&gt;</button>
+    
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+    let a, b;
+
+    function getVal() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+    }
+
+    function renderResult(result) {
+        document.getElementById("result").innerText = result;
+    }
+
+    function calBit(operator){
+        getVal();
+        let res = eval(a + operator + b);
+        renderResult(res);
+    }
+</script>
+    
+</body>
+</html>
