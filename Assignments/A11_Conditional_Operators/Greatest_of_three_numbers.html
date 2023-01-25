@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>G.O.A.T</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            text-align: center;
+            padding-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    A:<input id="A" type="number">
+    <br><br>
+    B:<input id="B" type="number">
+    <br><br>
+    C:<input id="C" type="number">
+    <br><br>    
+    <button onclick="find()">Find</button>
+    <br><br>
+    Greatest: <input id="n1" type="number">
+    <br><br>
+    Smallest: <input  id="n2" type="number">
+</div>
+<script>
+    function find(){
+        let A= document.getElementById("A").value;
+        let B= document.getElementById("B").value;
+        let C= document.getElementById("C").value;
+
+        let max;
+        let min;
+        if(A>B){
+            if(A>C){
+                max=A;
+
+            }
+            else{
+                max=C;
+            }
+        }
+        else{
+            if(B>C){
+                max=B;
+            }
+            else{
+                max=C;
+            }
+        }
+        document.getElementById("n1").value=max;
+       
+        if(A<B){
+            if(A<C){
+                min=A;
+
+            }
+            else{
+                min=C;
+            }
+        }
+        else{
+            if(B<C){
+                min=B;
+            }
+            else{
+                min=C;
+            }
+        }
+        document.getElementById("n2").value=min;
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
